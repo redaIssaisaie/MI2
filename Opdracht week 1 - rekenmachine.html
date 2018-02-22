@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Rekenkudige operatoren</h2>
+
+<input type="text" name="getal1"> + <input type="text" name="getal2"> = <input type="text" name="resultaat">
+<input type="submit" value="Submit">
+<p id="Plus"></p>
+<p id="Min"></p>
+<p id="Maal"></p>
+<p id="Delen"></p>
+
+<script>
+    "use strict";
+    
+    function validateForm() {
+    var resultaat = document.forms["myForm"]["getal1"].value + document.forms["myForm"]["getal2"].value;
+    
+    }
+    
+    function telOp(p1, p2) 
+    {
+        return p1 + p2;
+    }
+    document.getElementById("Plus").innerHTML = "10 + 4 = " + telOp(10, 4);
+
+    function Min(p1, p2) 
+    {
+        return p1 - p2;
+    }
+    document.getElementById("Min").innerHTML = "10 - 4 = " + Min(10, 4);
+
+    function Maal(p1, p2) 
+    {
+        return p1 * p2;
+    }
+    document.getElementById("Maal").innerHTML = "10 * 4 = " + Maal(10, 4);;
+
+    function Delen(p1, p2) 
+    {
+        return p1 / p2;
+    }
+    document.getElementById("Delen").innerHTML = "10 / 4 = " + Delen(10, 4);    
+    
+</script>
+
+</body>
+</html>
